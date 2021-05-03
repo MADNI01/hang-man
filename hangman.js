@@ -42,7 +42,6 @@ const words = {
   let categoryValue = words[radnomCategory]
   let randomValue = Math.floor(Math.random()* categoryValue.length)
   let randomValueValue = categoryValue[randomValue]
-  console.log(randomValueValue)
 
   
   let emptyLettersArray = Array.from(randomValueValue);
@@ -64,7 +63,6 @@ emptyLettersArray.forEach((Element)=>{
   let emptyLettersArrayArray  = Array.from(randomValueValue.toLowerCase());
    
   let guessArray = Array.from(document.querySelectorAll(".empty-letters span"))
-  console.log(guessArray)
 document.addEventListener("click", e=>{
     let theStatus = false;
     if(e.target.className=== "letter-box"){
