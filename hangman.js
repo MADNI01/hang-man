@@ -121,3 +121,15 @@ reBtn.addEventListener("click",()=>{
 
 
 
+function counter() {
+
+    return this.count++
+}
+
+const obj = {
+        count : 0,
+        counter: counter
+
+}
+obj.counter()
+console.log(obj.count)
